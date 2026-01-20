@@ -63,6 +63,8 @@ SWITCH(
   [YelpRating] >= 4.0, "4.0 – 4.39",
   "Below 4.0"
 )
+```
+---
 The **Rating Class** field is used in a dropdown slicer. Selecting a rating class automatically filters:
 - The map
 - The bar chart
