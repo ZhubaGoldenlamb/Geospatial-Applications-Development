@@ -80,35 +80,34 @@ SWITCH(
 
 ---
 
-## Cartography & Web Mapping Projects
-
-This section highlights independent geospatial mapping projects focused on **cartographic design, visual hierarchy, and spatial storytelling**, distinct from application or dashboard development.
-
----
-
-### 🗺️ Olympic Venues & Transportation Flow  
+### 🗺️ Project 2: Olympic Venues & Transportation Flow  
 **Custom ArcGIS Vector Basemap Design**
 
 🔗 **Interactive Web Map:** https://arcg.is/1LrKa80
 
-**Summary**  
-This project demonstrates custom vector basemap design using **ArcGIS Online’s Vector Tile Style Editor**, with an emphasis on reducing visual noise while enhancing thematic clarity. The basemap was intentionally designed to support Olympic venue data without overpowering it.
+**Overview**  
+This project focuses on custom **vector basemap design** using ArcGIS Online’s **Vector Tile Style Editor**. The goal was to create a basemap that supports thematic Olympic venue data while maintaining visual restraint, clear hierarchy, and legibility across scales. Rather than relying on a default basemap, the styling was intentionally modified to reduce visual noise and emphasize transportation connectivity.
 
-**Design Highlights**
-- Light and dark blue used for **water features and major highways** to establish circulation patterns
-- Reduced font sizes and road widths to maintain a subdued background hierarchy
-- Yellow label halos added to improve place-name legibility
-- Dark green parks spaced and softened to act as visual accents rather than dominant features
-- Olympic venue points styled in **red**, completing a balanced Olympic color palette (red, green, blue, black, white)
-- Blue polygons used to reinforce venue visibility across scales
-- Highway styling emphasizes how transportation corridors feed into venue locations
+<img src="/screenshots/olympic_basemap.png" width="900">
 
-**Tools**
+#### **Cartographic Design Strategy**
+- Light and dark blue tones were applied to **water features and major highways** to establish visual continuity and highlight circulation patterns.
+- Road widths and label font sizes were reduced to prevent the basemap from overpowering thematic layers.
+- Yellow halos were added around place names to improve label legibility against varied backgrounds.
+- Parks were symbolized in dark green and spatially softened to act as accents rather than dominant visual elements.
+
+#### **Thematic Layer Design**
+- Olympic venue locations are symbolized in **red**, immediately distinguishing them from the basemap.
+- Red venue points complete a balanced Olympic-inspired color palette consisting of **red, green, blue, black, and white**.
+- Blue polygons were added around venues to reinforce visibility and contrast across multiple zoom levels.
+- Highway styling emphasizes how regional transportation corridors feed into venue locations, supporting spatial interpretation of accessibility.
+
+#### **Design Intent**
+The basemap was designed to function as a supporting structure rather than a focal element. Color, symbol weight, and spacing were deliberately restrained so that Olympic venues and transportation relationships remain visually prominent without distraction from underlying geographic context.
+
+#### **Tools**
 - ArcGIS Online  
 - ArcGIS Vector Tile Style Editor  
 
-**Focus**
+#### **Focus**
 Cartographic design, vector basemap styling, visual hierarchy, and thematic support mapping.
-
----
-
