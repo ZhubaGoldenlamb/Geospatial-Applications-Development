@@ -118,3 +118,38 @@ Because Experience Builder applications are data-driven rather than static layou
 - ArcGIS Experience Builder
 - ArcGIS Survey123
 - Excel (data cleaning and validation)
+
+---
+
+## Cartography & Web Mapping Projects
+
+This section highlights independent geospatial mapping projects focused on **cartographic design, visual hierarchy, and spatial storytelling**, distinct from application or dashboard development.
+
+---
+
+### 🗺️ Olympic Venues & Transportation Flow  
+**Custom ArcGIS Vector Basemap Design**
+
+🔗 **Interactive Web Map:** https://arcg.is/1LrKa80
+
+**Summary**  
+This project demonstrates custom vector basemap design using **ArcGIS Online’s Vector Tile Style Editor**, with an emphasis on reducing visual noise while enhancing thematic clarity. The basemap was intentionally designed to support Olympic venue data without overpowering it.
+
+**Design Highlights**
+- Light and dark blue used for **water features and major highways** to establish circulation patterns
+- Reduced font sizes and road widths to maintain a subdued background hierarchy
+- Yellow label halos added to improve place-name legibility
+- Dark green parks spaced and softened to act as visual accents rather than dominant features
+- Olympic venue points styled in **red**, completing a balanced Olympic color palette (red, green, blue, black, white)
+- Blue polygons used to reinforce venue visibility across scales
+- Highway styling emphasizes how transportation corridors feed into venue locations
+
+**Tools**
+- ArcGIS Online  
+- ArcGIS Vector Tile Style Editor  
+
+**Focus**
+Cartographic design, vector basemap styling, visual hierarchy, and thematic support mapping.
+
+---
+
