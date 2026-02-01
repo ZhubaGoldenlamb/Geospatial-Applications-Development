@@ -8,7 +8,10 @@ This section documents applied geospatial projects focused on **interactive anal
 ### 📊 Project 1: Interactive Restaurant Analysis Dashboard  
 **Power BI · ArcGIS Experience Builder · Survey123**
 
-🔗 **Live Application:** View Comprehensive Power BI Dashboard
+🔗 **Live Applications**  
+- **Power BI Dashboard:** [View Interactive Dashboard](PASTE_POWER_BI_URL_HERE)  
+- **Web GIS Application (Experience Builder):** [Open Web App](PASTE_EXPERIENCE_BUILDER_URL_HERE)  
+- **Survey123 Form:** [Submit / View Survey](PASTE_SURVEY123_URL_HERE)
 
 **Overview**  
 This project integrates Yelp restaurant review data with user-submitted Survey123 responses to support comparative spatial and qualitative analysis. The system consists of a Power BI dashboard, an ArcGIS Experience Builder web application, and a Survey123 form. Power BI serves as the primary analytical interface, while Experience Builder extends spatial exploration beyond the constraints of a dashboard layout.
@@ -22,7 +25,7 @@ This project integrates Yelp restaurant review data with user-submitted Survey12
 <img src="/screenshots/Online_Web_App.PNG" width="1500">
 
 **Survey123 Form (User Data Collection)**  
-<img src="/screenshots/Survey.PNG" width="500">
+<img src="/screenshots/Survey.PNG" width="550">
 
 #### **Map Implementation: ArcGIS Map for Power BI**
 The dashboard uses **ArcGIS Map for Power BI** rather than Azure Maps. Azure Maps was evaluated but did not provide the level of reliability and GIS-specific functionality required for this project. ArcGIS Map for Power BI allowed for better handling of point data, attribute-driven symbology, and pop-up behavior, while maintaining consistency with ArcGIS Online–hosted layers used elsewhere in the workflow.
