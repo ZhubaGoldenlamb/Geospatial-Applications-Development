@@ -84,6 +84,7 @@ SWITCH(
 **Custom ArcGIS Vector Basemap Design**
 
 🔗 **Web Map (Item Page):** [Open Web Map Item](https://www.arcgis.com/home/item.html?id=a84a149775b0419e90808eceb19bc8c5)
+*If the live map is temporarily unavailable due to network or ArcGIS Online service issues, a static preview is shown below.*
 
 **Overview**  
 This project focuses on custom **vector basemap design** using ArcGIS Online’s **Vector Tile Style Editor**. The goal was to create a basemap that supports thematic Olympic venue data while maintaining visual restraint, clear hierarchy, and legibility across scales. Rather than relying on a default basemap, the styling was intentionally modified to reduce visual noise and emphasize transportation connectivity.
