@@ -9,9 +9,9 @@ This section documents applied geospatial projects focused on **interactive anal
 **Power BI · ArcGIS Experience Builder · Survey123**
 
 🔗 **Live Applications**  
-- **Power BI Dashboard:** [View Interactive Dashboard](PASTE_POWER_BI_URL_HERE)  
-- **Web GIS Application (Experience Builder):** [Open Web App](PASTE_EXPERIENCE_BUILDER_URL_HERE)  
-- **Survey123 Form:** [Submit / View Survey](PASTE_SURVEY123_URL_HERE)
+- **Power BI Dashboard:** [View Interactive Dashboard](https://app.powerbi.com/groups/me/reports/0db32854-5dee-4b5d-879f-3726b2abce8d/9b943d3431319454036d?experience=power-bi)  
+- **Web GIS Application (Experience Builder):** [Open Web App](https://csulb.maps.arcgis.com/home/item.html?id=f1858b7291a74810b991c77a5711407f)
+- **Survey123 Form:** [Submit / View Survey](https://csulb.maps.arcgis.com/home/item.html?id=e67d65f4376440c0b955b1871b9a5dfd)
 
 **Overview**  
 This project integrates Yelp restaurant review data with user-submitted Survey123 responses to support comparative spatial and qualitative analysis. The system consists of a Power BI dashboard, an ArcGIS Experience Builder web application, and a Survey123 form. Power BI serves as the primary analytical interface, while Experience Builder extends spatial exploration beyond the constraints of a dashboard layout.
