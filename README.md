@@ -27,11 +27,12 @@ This project integrates Yelp restaurant review data with user-submitted Survey12
 **Survey123 Form (User Data Collection)**  
 <img src="/screenshots/Survey.PNG" width="550">
 
-#### **Map Implementation: ArcGIS Map for Power BI**
-The dashboard uses **ArcGIS Map for Power BI** rather than Azure Maps. Azure Maps was evaluated but did not provide the level of reliability and GIS-specific functionality required for this project. ArcGIS Map for Power BI allowed for better handling of point data, attribute-driven symbology, and pop-up behavior, while maintaining consistency with ArcGIS Online–hosted layers used elsewhere in the workflow.
-
 #### **Role of ArcGIS Experience Builder**
-Power BI is optimized for structured comparison and filtering, but is limited in terms of free-form spatial interaction. To address this, an ArcGIS Experience Builder web application is linked directly from the Power BI dashboard. This allows users to transition from summary analytics to deeper spatial exploration, providing greater flexibility for interacting with restaurant locations, ratings, and survey feedback.
+The ArcGIS Experience Builder application provides deeper spatial interaction beyond the Power BI dashboard. Each restaurant point includes a structured pop-up that integrates both **user-submitted survey responses** and **aggregated Yelp review data**.
+
+Within the pop-up:
+- The **“Experience”** and **“Write a Review”** sections display Survey123 responses, allowing users to view qualitative feedback and contribute new survey entries.
+- Below the survey content, **Yelp review data** is presented, including aggregated ratings and review metrics derived from online sources.
 
 #### **Key Design Decisions**
 - The dashboard is intentionally divided into two vertical sections:
