@@ -22,7 +22,7 @@ This project integrates Yelp restaurant review data with user-submitted Survey12
 <img src="/screenshots/Online_Web_App.PNG" width="500">
 
 **Survey123 Form (User Data Collection)**  
-<img src="/screenshots/Survey.PNG" width="3000">
+<img src="/screenshots/Survey.PNG" width="300">
 
 #### **Map Implementation: ArcGIS Map for Power BI**
 The dashboard uses **ArcGIS Map for Power BI** rather than Azure Maps. Azure Maps was evaluated but did not provide the level of reliability and GIS-specific functionality required for this project. ArcGIS Map for Power BI allowed for better handling of point data, attribute-driven symbology, and pop-up behavior, while maintaining consistency with ArcGIS Online–hosted layers used elsewhere in the workflow.
