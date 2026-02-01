@@ -83,7 +83,7 @@ SWITCH(
 ### 🗺️ Project 2: Olympic Venues & Transportation Flow  
 **Custom ArcGIS Vector Basemap Design**
 
-🔗 **Interactive Web Map:** https://arcg.is/1LrKa80
+🔗 **Interactive Web Map:** [View Web Map](https://arcg.is/1LrKa80)
 
 **Overview**  
 This project focuses on custom **vector basemap design** using ArcGIS Online’s **Vector Tile Style Editor**. The goal was to create a basemap that supports thematic Olympic venue data while maintaining visual restraint, clear hierarchy, and legibility across scales. Rather than relying on a default basemap, the styling was intentionally modified to reduce visual noise and emphasize transportation connectivity.
