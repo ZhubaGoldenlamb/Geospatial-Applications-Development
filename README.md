@@ -22,7 +22,7 @@ This project integrates Yelp restaurant review data with user-submitted Survey12
 <img src="/screenshots/PowerBI_Dashboard.PNG" width="1500">
 
 **ArcGIS Experience Builder Web App (Extended Spatial Exploration)**  
-<img src="/screenshots/Online_Web_App.PNG" width="1500">
+<img src="/screenshots/Online_Web_App.png" width="1500">
 
 **Survey123 Form (User Data Collection)**  
 <img src="/screenshots/Survey.PNG" width="550">
