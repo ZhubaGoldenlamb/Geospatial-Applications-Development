@@ -23,7 +23,7 @@ This project integrates Yelp restaurant review data with user-submitted Survey12
 #### **Application Components**
 
 **Power BI Dashboard (Primary Analysis Interface)**  
-<img src="/screenshots/PowerBI_Dashboard.PNG" width="1500">
+<img src="/screenshots/PowerBI_Dashboard.PNG" width="2000">
 
 **ArcGIS Experience Builder Web App (Extended Spatial Exploration)**  
 <img src="/screenshots/Online_Web_App.png" width="1000">
