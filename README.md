@@ -1,18 +1,13 @@
 ## Interactive Dashboards & Web GIS Applications
 **Power BI • ArcGIS Experience Builder • Custom Web Mapping**
 
-This section documents applied geospatial projects focused on **interactive analysis, data-driven decision support, and cartographic design**. Projects range from full dashboard applications to independent web mapping and basemap development work.
+This section documents applied geospatial projects focused on **interactive analysis, data-driven decision support, and cartographic design**.
 
-🔗 **Extended ArcGIS Portfolio (Esri Hub)**  
-A consolidated portfolio of additional visualization-focused projects developed in ArcGIS Experience Builder, ArcGIS Dashboards, and extensive use of Arcade advanced pop-up scripting.
-👉 View the full Esri Hub portfolio: https://csulb.hub.arcgis.com/pages/b82842670730436991cf08f8b023501a?preview=true
+🔗 **Extended ArcGIS Portfolio (Esri Hub)** 👉 View the full Esri Hub portfolio: https://csulb.hub.arcgis.com/pages/b82842670730436991cf08f8b023501a?preview=true
 
 ---
 
 ### 📊 Project 1: Interactive Restaurant Analysis Dashboard
-
-**Overview**  
-This project integrates Yelp restaurant review data with user-submitted Survey123 responses to support comparative spatial and qualitative analysis. The system consists of a Power BI dashboard, an ArcGIS Experience Builder web application, and a Survey123 form. Power BI serves as the primary analytical interface, while Experience Builder extends spatial exploration beyond the constraints of a dashboard layout.
 
 ## 🚀 View the Live Interactive Power BI Dashboard👉 **[Open the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)**
 
