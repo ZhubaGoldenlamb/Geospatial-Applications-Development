@@ -10,9 +10,6 @@ A consolidated portfolio of additional visualization-focused projects developed 
 ---
 
 ### 📊 Project 1: Interactive Restaurant Analysis Dashboard  
-**Power BI · ArcGIS Experience Builder · Survey123**
-
-🔗 **Live Applications**  
 ## 🚀 View the Live Interactive Power BI Dashboard  
 👉 **[Open the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)**
 
