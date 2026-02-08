@@ -79,13 +79,12 @@ The ArcGIS Experience Builder application provides deeper spatial interaction be
 *Web GIS Application (Experience Builder):* [Open Web App](https://csulb.maps.arcgis.com/home/item.html?id=f1858b7291a74810b991c77a5711407f)
 
 Within the pop-up:
-- The **“Experience”** and **“Write a Review”** sections display Survey123 responses, allowing users to view qualitative feedback and contribute new survey entries.
+- The “Experience” and “Write a Review” sections display Survey123 responses, allowing users to view qualitative feedback and contribute new survey entries.
+- Below the survey content, **Yelp review data** is presented, including aggregated ratings and review metrics derived from online sources.
 
 **Survey123 Form (User Data Collection)**  
 <img src="/screenshots/Survey.PNG" width="400">
 *Survey123 Form:* [Submit / View Survey](https://csulb.maps.arcgis.com/home/item.html?id=e67d65f4376440c0b955b1871b9a5dfd)
-
-- Below the survey content, **Yelp review data** is presented, including aggregated ratings and review metrics derived from online sources.
 
 #### **Tools**
 - Power BI Desktop  
