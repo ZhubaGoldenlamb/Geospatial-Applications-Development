@@ -209,7 +209,7 @@ To support quantitative interpretation beyond map visualization, **1,000 random 
 <p align="center">
   <img src="screenshots/ndvi_plots_v2.png"
        alt="NDVI Histogram and Red–NIR Scatterplot from Sampled Pixels"
-       style="width: 100%; max-width: 1200px; height: auto;">
+       style="width: 100%; max-width: 800px; height: auto;">
 </p>
 
 The histogram illustrates the distribution of NDVI values across the basin, while the scatterplot compares **red (Band 4)** and **near-infrared (Band 5)** reflectance, revealing the expected spectral separation associated with vegetated surfaces. These plots confirm vegetation variability observed in the spatial analysis and provide additional context for interpreting NDVI behavior.
