@@ -5,6 +5,12 @@ This section documents applied geospatial projects focused on **interactive anal
 
 ---
 
+🔗 **Extended ArcGIS Portfolio (Esri Hub)**  
+A consolidated portfolio of additional visualization-focused projects developed in ArcGIS Experience Builder, ArcGIS Dashboards, and extensive use of Arcade advanced pop-up scripting.
+👉 View the full Esri Hub portfolio: https://csulb.hub.arcgis.com/pages/b82842670730436991cf08f8b023501a?preview=true
+
+---
+
 ### 📊 Project 1: Interactive Restaurant Analysis Dashboard  
 **Power BI · ArcGIS Experience Builder · Survey123**
 
