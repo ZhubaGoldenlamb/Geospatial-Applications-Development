@@ -168,7 +168,7 @@ This step was required to:
 
 River order values were queried directly from the HydroSHEDS river attributes and visualized to verify spatial continuity and hydrologic hierarchy prior to filtering.
 
-![Main River Orders Used for Geoprocessing (RIV_ORD ≤ 6)](images/river_order.png)
+![Main River Orders Used for Geoprocessing (RIV_ORD ≤ 6)](screenshots/river_order.png)
 
 Based on this classification, river segments with `RIV_ORD ≤ 6` were retained as **main rivers** and used as the foundation for:
 - Riparian buffer generation  
@@ -195,7 +195,7 @@ Raster workflows use **Landsat 9 TOA imagery** and include:
 #### NDVI Maximum Composite (Clipped to Basin)
 The maximum NDVI composite highlights spatial variation in vegetation density across the basin, emphasizing greener riparian corridors relative to surrounding uplands.
 
-![NDVI Max Composite](images/ndvi_max_basin.png)
+![NDVI Max Composite](screenshots/ndvi_max_basin.png)
 
 ### Sampling & Exploratory Data Analysis
 
@@ -207,7 +207,7 @@ Exploratory plots include:
 
 These plots support interpretation of vegetation structure and spectral behavior beyond map-based visualization.
 
-![NDVI Histogram and Band Scatterplot](images/ndvi_plots.png)
+![NDVI Histogram and Band Scatterplot](screenshots/ndvi_plots.png)
 
 
 ### Key Skills Demonstrated
