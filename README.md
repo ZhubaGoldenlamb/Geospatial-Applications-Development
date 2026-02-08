@@ -168,7 +168,11 @@ This step was required to:
 
 River order values were queried directly from the HydroSHEDS river attributes and visualized to verify spatial continuity and hydrologic hierarchy prior to filtering.
 
-![Main River Orders Used for Geoprocessing (RIV_ORD ≤ 6)](screenshots/river_order.png)
+<p align="center">
+  <img src="screenshots/river_order.png"
+       alt="Main River Orders Used for Geoprocessing (RIV_ORD ≤ 6)"
+       width="1000">
+</p>
 
 Based on this classification, river segments with `RIV_ORD ≤ 6` were retained as **main rivers** and used as the foundation for:
 - Riparian buffer generation  
