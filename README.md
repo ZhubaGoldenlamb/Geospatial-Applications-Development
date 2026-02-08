@@ -13,9 +13,11 @@ A consolidated portfolio of additional visualization-focused projects developed 
 **Power BI · ArcGIS Experience Builder · Survey123**
 
 🔗 **Live Applications**  
-- **Power BI Dashboard:** [View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)
-- *Web GIS Application (Experience Builder):* [Open Web App](https://csulb.maps.arcgis.com/home/item.html?id=f1858b7291a74810b991c77a5711407f)
-- *Survey123 Form:* [Submit / View Survey](https://csulb.maps.arcgis.com/home/item.html?id=e67d65f4376440c0b955b1871b9a5dfd)
+## 🚀 View the Live Interactive Power BI Dashboard  
+👉 **[Open the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)**
+
+*Web GIS Application (Experience Builder):* [Open Web App](https://csulb.maps.arcgis.com/home/item.html?id=f1858b7291a74810b991c77a5711407f)
+*Survey123 Form:* [Submit / View Survey](https://csulb.maps.arcgis.com/home/item.html?id=e67d65f4376440c0b955b1871b9a5dfd)
 
 **Overview**  
 This project integrates Yelp restaurant review data with user-submitted Survey123 responses to support comparative spatial and qualitative analysis. The system consists of a Power BI dashboard, an ArcGIS Experience Builder web application, and a Survey123 form. Power BI serves as the primary analytical interface, while Experience Builder extends spatial exploration beyond the constraints of a dashboard layout.
@@ -26,7 +28,7 @@ This project integrates Yelp restaurant review data with user-submitted Survey12
 <img src="/screenshots/PowerBI_Dashboard.PNG" width="2000">
 
 **ArcGIS Experience Builder Web App (Extended Spatial Exploration)**  
-<img src="/screenshots/Online_Web_App.png" width="800">
+<img src="/screenshots/Online_Web_App.png" width="600">
 
 **Survey123 Form (User Data Collection)**  
 <img src="/screenshots/Survey.PNG" width="400">
