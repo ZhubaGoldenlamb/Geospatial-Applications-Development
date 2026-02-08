@@ -119,72 +119,66 @@ Cartographic design, vector basemap styling, visual hierarchy, and thematic supp
 
 ---
 
-## 🛰️ Project 3: Geoprocessing & Remote Sensing Analysis with Google Earth Engine (Python)
+## 🌊 Project 3: Geoprocessing & Remote Sensing Analysis with Google Earth Engine (Python)
 
 **Python · Google Earth Engine · geemap · Landsat 9**
 
-This project demonstrates a complete **geoprocessing and remote sensing workflow** using the **Google Earth Engine Python API** (`geemap`) in a Jupyter/Colab environment. The analysis integrates **vector and raster data processing**, spatial filtering, attribute queries, and environmental index calculation within the **Walla Walla Basin (Washington, USA)**.
+This project demonstrates an end-to-end **geoprocessing and remote sensing workflow** implemented with the **Google Earth Engine Python API** (`geemap`). The analysis integrates **vector and raster processing**, spatial filtering, attribute queries, and vegetation index analysis within the **Walla Walla Basin (Washington, USA)**.
 
-The workflow emphasizes reproducible Python scripting, spatial reasoning, and the ability to transition from vector-based hydrologic analysis to raster-based environmental assessment.
+The workflow emphasizes reproducible Python scripting, spatial reasoning, and analytical decision-making, transitioning from hydrologic network analysis to raster-based environmental assessment.
 
 ### Overview
 
-The analysis combines global hydrologic datasets with satellite imagery to examine river structure, riparian context, and vegetation patterns across the Walla Walla Basin. Vector operations are used to isolate basin-specific river segments and derive spatial relationships, while raster processing is applied to calculate vegetation indices and compare riparian versus upland conditions.
+Global hydrologic datasets and satellite imagery were combined to examine **river structure, riparian extent, and vegetation patterns** across the Walla Walla Basin. Vector operations were used to isolate basin-specific river segments, derive spatial relationships, and define analytical zones, while raster processing supported vegetation index calculation and zonal comparison between riparian and upland areas.
 
-This project highlights applied geoprocessing logic rather than interface-driven GIS tools, demonstrating how large geospatial datasets can be queried, transformed, and analyzed programmatically.
+This project highlights **programmatic geoprocessing logic** rather than interface-driven GIS tools, demonstrating how large geospatial datasets can be queried, transformed, and analyzed using Python.
 
 📄 The complete geoprocessing workflow is implemented in the Python script  
-[gee_geoprocessing_workflow_ZG.py](gee_geoprocessing_workflow_ZG.py)
-This documents the full vector and raster analysis using the Google Earth Engine Python API.
+[gee_geoprocessing_workflow_ZG.py](gee_geoprocessing_workflow_ZG.py), which documents the full vector and raster analysis using the Google Earth Engine Python API.
 
 ### Vector Analysis & Spatial Operations
 
-Vector workflows focus on hydrologic structure and spatial relationships and include:
+Vector workflows focused on hydrologic structure and spatial relationships and included:
 
 - Loading global and national datasets:
   - WWF HydroATLAS Basin Level 6
   - WWF HydroSHEDS Free-Flowing Rivers
   - FAO GAUL administrative boundaries
-- Defining a study location using geographic coordinates (central Walla Walla)
+- Defining a study reference point (central Walla Walla)
 - Filtering basin features by attribute (`HYBAS_ID`)
 - Spatial filtering using:
-  - Intersection
+  - Basin intersection
   - Proximity (distance-based queries)
 - Querying river attributes by stream order
 - Calculating total and main-channel river lengths
-- Generating riparian buffers around higher-order rivers
-- Deriving upland areas using geometric difference operations
-- Adding derived attributes (distance to central Walla Walla)
-- Performing spatial joins between river segments and U.S. Census Tracts (TIGER/2020)
+- Generating riparian buffers around dominant channels
+- Delineating upland areas using geometric difference operations
+- Adding derived attributes (distance to study point)
+- Performing spatial joins with U.S. Census Tracts (TIGER/2020)
 
-### River Order Classification for Geoprocessing
+### River Order Classification and Main Channel Selection
 
-To support downstream geoprocessing objectives, river segments within the Walla Walla Basin were classified by **stream order (`RIV_ORD`)** and filtered to isolate the **six largest river orders**, representing the primary channel network rather than smaller tributaries.
-
-This step was required to:
-- Focus riparian analysis on dominant hydrologic corridors  
-- Prevent minor tributaries from disproportionately influencing buffer and zonal statistics  
-- Establish a consistent definition of “main rivers” for subsequent spatial operations  
-
-River order values were queried directly from the HydroSHEDS river attributes and visualized to verify spatial continuity and hydrologic hierarchy prior to filtering.
+River segments within the Walla Walla Basin were classified by **stream order (`RIV_ORD`)** to distinguish dominant hydrologic channels from smaller tributaries. The map below highlights river segments filtered to **stream orders ≤ 6**, which were defined as *main rivers* for downstream geoprocessing.
 
 <p align="center">
   <img src="screenshots/river_order.png"
        alt="Main River Orders Used for Geoprocessing (RIV_ORD ≤ 6)"
-       width="1500">
+       style="width: 100%; max-width: 1400px; height: auto;">
 </p>
 
-Based on this classification, river segments with `RIV_ORD ≤ 6` were retained as **main rivers** and used as the foundation for:
-- Riparian buffer generation  
-- Upland versus riparian delineation  
-- Raster clipping and zonal statistics  
+This classification step was required to:
+- Focus riparian analysis on primary flow corridors  
+- Prevent minor tributaries from disproportionately influencing buffer and zonal statistics  
+- Establish a consistent hydrologic foundation for raster-based analysis  
+
+Using this filtered network, river length statistics showed that **higher-order rivers account for approximately 21% of total river length**, indicating that most of the basin’s network consists of lower-order tributaries.
 
 ### Raster Analysis & Remote Sensing
 
-Raster workflows use **Landsat 9 TOA imagery** and include:
+Raster workflows were conducted using **Landsat 9 TOA imagery** and included:
 
 - Image collection filtering by:
-  - Date range
+  - Date range (April–November 2022)
   - Basin geometry
   - Cloud cover threshold
 - False-color visualization for vegetation interpretation
@@ -192,44 +186,45 @@ Raster workflows use **Landsat 9 TOA imagery** and include:
   - Normalized Difference Vegetation Index (NDVI)
   - Normalized Burn Ratio (NBR)
 - Mapping index calculations across an image collection
-- Pixel-wise compositing to generate a maximum NDVI composite
+- Pixel-wise compositing to generate a **maximum NDVI composite**
 - Clipping raster outputs to basin boundaries
 - Zonal statistics comparing riparian and upland regions
 
 #### NDVI Maximum Composite (Clipped to Basin)
-The maximum NDVI composite highlights spatial variation in vegetation density across the basin, emphasizing greener riparian corridors relative to surrounding uplands.
+
+The maximum NDVI composite emphasizes areas of persistent vegetation vigor by retaining the highest NDVI value observed at each pixel across the image collection.
 
 <p align="center">
   <img src="screenshots/ndvi_max_basin.png"
-       alt="NDVI Max Composite (Clipped to Walla Walla Basin)"
-       width="1000"
-       style="max-width: 100%; height: auto;">
+       alt="NDVI Maximum Composite Clipped to the Walla Walla Basin"
+       style="width: 100%; max-width: 1400px; height: auto;">
 </p>
+
+Higher NDVI values are concentrated along riparian corridors and irrigated agricultural areas, while lower values dominate surrounding upland and semi-arid regions. This composite served as the raster foundation for riparian versus upland comparison.
 
 ### Sampling & Exploratory Data Analysis
 
-To further explore vegetation patterns, random pixel samples were extracted from the composite raster and analyzed using Pandas and Altair.
+To support quantitative interpretation beyond map visualization, **1,000 random pixels** were sampled from the basin-clipped NDVI composite and analyzed using Pandas and Altair.
 
-Exploratory plots include:
-- Histogram of NDVI values across the basin
-- Scatterplot comparing red (B4) and near-infrared (B5) reflectance
+<p align="center">
+  <img src="screenshots/ndvi_plots.png"
+       alt="NDVI Histogram and Red–NIR Scatterplot from Sampled Pixels"
+       style="width: 100%; max-width: 1200px; height: auto;">
+</p>
 
-These plots support interpretation of vegetation structure and spectral behavior beyond map-based visualization.
-
-![NDVI Histogram and Band Scatterplot](screenshots/ndvi_plots.png)
-
+The histogram illustrates the distribution of NDVI values across the basin, while the scatterplot compares **red (Band 4)** and **near-infrared (Band 5)** reflectance, revealing the expected spectral separation associated with vegetated surfaces. These plots confirm vegetation variability observed in the spatial analysis and provide additional context for interpreting NDVI behavior.
 
 ### Key Skills Demonstrated
 
-- Python scripting for geospatial analysis
-- Google Earth Engine Python API
-- Vector–raster integration
-- Spatial filtering, buffering, and joins
-- Hydrologic feature analysis
-- Spectral index calculation (NDVI, NBR)
-- Zonal statistics and raster sampling
-- Reproducible geoprocessing workflows
-- Interactive mapping and exploratory visualization
+- Python scripting for geospatial analysis  
+- Google Earth Engine Python API  
+- Vector–raster integration  
+- Spatial filtering, buffering, and joins  
+- Hydrologic network analysis  
+- Spectral index calculation (NDVI, NBR)  
+- Zonal statistics and raster sampling  
+- Reproducible geoprocessing workflows  
+- Exploratory spatial data analysis  
 
 ### Tools
 
@@ -238,9 +233,7 @@ These plots support interpretation of vegetation structure and spectral behavior
 - geemap  
 - Pandas  
 - Altair  
-- Google Colab / Jupyter  
 
 ### Context
 
-This project represents an **analytical, scripting-focused complement** to the visualization and application-driven projects presented elsewhere in this repository. While other projects emphasize dashboard design and user interaction, this workflow highlights geoprocessing logic, spatial analysis, and environmental data interpretation using programmatic GIS methods.
-
+This project represents an **analytical, scripting-focused complement** to the visualization- and application-driven projects presented elsewhere in this repository. While other projects emphasize dashboards, web GIS, and cartographic design, this workflow highlights **geoprocessing logic, spatial analysis, and environmental interpretation** using programmatic GIS methods.
