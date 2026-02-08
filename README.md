@@ -29,7 +29,7 @@ This project integrates Yelp restaurant review data with user-submitted Survey12
 <img src="/screenshots/Online_Web_App.png" width="1500">
 
 **Survey123 Form (User Data Collection)**  
-<img src="/screenshots/Survey.PNG" width="300">
+<img src="/screenshots/Survey.PNG" width="400">
 
 #### **Role of ArcGIS Experience Builder**
 The ArcGIS Experience Builder application provides deeper spatial interaction beyond the Power BI dashboard. Each restaurant point includes a structured pop-up that integrates both **user-submitted survey responses** and **aggregated Yelp review data**.
