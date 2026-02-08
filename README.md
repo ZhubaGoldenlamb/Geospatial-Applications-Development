@@ -7,7 +7,7 @@ This section documents applied geospatial projects focused on **interactive anal
 
 ### 📊 Project 1: Interactive Restaurant Analysis Dashboard
 
-## 🚀 View the Live Interactive Power BI Dashboard👉 **[Open the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)**
+## 🚀 View the Live Interactive Power BI Dashboard 👉 **[Open the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)**
 
 **Power BI Dashboard (Primary Analysis Interface)**  
 <img src="/screenshots/PowerBI_Dashboard.PNG" width="2000">
