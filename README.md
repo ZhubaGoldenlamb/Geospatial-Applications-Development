@@ -3,8 +3,6 @@
 
 This section documents applied geospatial projects focused on **interactive analysis, data-driven decision support, and cartographic design**. Projects range from full dashboard applications to independent web mapping and basemap development work.
 
----
-
 🔗 **Extended ArcGIS Portfolio (Esri Hub)**  
 A consolidated portfolio of additional visualization-focused projects developed in ArcGIS Experience Builder, ArcGIS Dashboards, and extensive use of Arcade advanced pop-up scripting.
 👉 View the full Esri Hub portfolio: https://csulb.hub.arcgis.com/pages/b82842670730436991cf08f8b023501a?preview=true
@@ -118,3 +116,118 @@ The basemap was designed to function as a supporting structure rather than a foc
 
 #### **Focus**
 Cartographic design, vector basemap styling, visual hierarchy, and thematic support mapping.
+
+---
+
+## 🛰️ Project 3: Geoprocessing & Remote Sensing Analysis with Google Earth Engine (Python)
+
+**Python · Google Earth Engine · geemap · Landsat 9**
+
+This project demonstrates a complete **geoprocessing and remote sensing workflow** using the **Google Earth Engine Python API** (`geemap`) in a Jupyter/Colab environment. The analysis integrates **vector and raster data processing**, spatial filtering, attribute queries, and environmental index calculation within the **Walla Walla Basin (Washington, USA)**.
+
+The workflow emphasizes reproducible Python scripting, spatial reasoning, and the ability to transition from vector-based hydrologic analysis to raster-based environmental assessment.
+
+### Overview
+
+The analysis combines global hydrologic datasets with satellite imagery to examine river structure, riparian context, and vegetation patterns across the Walla Walla Basin. Vector operations are used to isolate basin-specific river segments and derive spatial relationships, while raster processing is applied to calculate vegetation indices and compare riparian versus upland conditions.
+
+This project highlights applied geoprocessing logic rather than interface-driven GIS tools, demonstrating how large geospatial datasets can be queried, transformed, and analyzed programmatically.
+
+### Vector Analysis & Spatial Operations
+
+Vector workflows focus on hydrologic structure and spatial relationships and include:
+
+- Loading global and national datasets:
+  - WWF HydroATLAS Basin Level 6
+  - WWF HydroSHEDS Free-Flowing Rivers
+  - FAO GAUL administrative boundaries
+- Defining a study location using geographic coordinates (central Walla Walla)
+- Filtering basin features by attribute (`HYBAS_ID`)
+- Spatial filtering using:
+  - Intersection
+  - Proximity (distance-based queries)
+- Querying river attributes by stream order
+- Calculating total and main-channel river lengths
+- Generating riparian buffers around higher-order rivers
+- Deriving upland areas using geometric difference operations
+- Adding derived attributes (distance to central Walla Walla)
+- Performing spatial joins between river segments and U.S. Census Tracts (TIGER/2020)
+
+### River Order Classification for Geoprocessing
+
+To support downstream geoprocessing objectives, river segments within the Walla Walla Basin were classified by **stream order (`RIV_ORD`)** and filtered to isolate the **six largest river orders**, representing the primary channel network rather than smaller tributaries.
+
+This step was required to:
+- Focus riparian analysis on dominant hydrologic corridors  
+- Prevent minor tributaries from disproportionately influencing buffer and zonal statistics  
+- Establish a consistent definition of “main rivers” for subsequent spatial operations  
+
+River order values were queried directly from the HydroSHEDS river attributes and visualized to verify spatial continuity and hydrologic hierarchy prior to filtering.
+
+![Main River Orders Used for Geoprocessing (RIV_ORD ≤ 6)](images/river_order.png)
+
+Based on this classification, river segments with `RIV_ORD ≤ 6` were retained as **main rivers** and used as the foundation for:
+- Riparian buffer generation  
+- Upland versus riparian delineation  
+- Raster clipping and zonal statistics  
+
+### Raster Analysis & Remote Sensing
+
+Raster workflows use **Landsat 9 TOA imagery** and include:
+
+- Image collection filtering by:
+  - Date range
+  - Basin geometry
+  - Cloud cover threshold
+- False-color visualization for vegetation interpretation
+- Spectral index calculation:
+  - Normalized Difference Vegetation Index (NDVI)
+  - Normalized Burn Ratio (NBR)
+- Mapping index calculations across an image collection
+- Pixel-wise compositing to generate a maximum NDVI composite
+- Clipping raster outputs to basin boundaries
+- Zonal statistics comparing riparian and upland regions
+
+#### NDVI Maximum Composite (Clipped to Basin)
+The maximum NDVI composite highlights spatial variation in vegetation density across the basin, emphasizing greener riparian corridors relative to surrounding uplands.
+
+![NDVI Max Composite](images/ndvi_max_basin.png)
+
+### Sampling & Exploratory Data Analysis
+
+To further explore vegetation patterns, random pixel samples were extracted from the composite raster and analyzed using Pandas and Altair.
+
+Exploratory plots include:
+- Histogram of NDVI values across the basin
+- Scatterplot comparing red (B4) and near-infrared (B5) reflectance
+
+These plots support interpretation of vegetation structure and spectral behavior beyond map-based visualization.
+
+![NDVI Histogram and Band Scatterplot](images/ndvi_plots.png)
+
+
+### Key Skills Demonstrated
+
+- Python scripting for geospatial analysis
+- Google Earth Engine Python API
+- Vector–raster integration
+- Spatial filtering, buffering, and joins
+- Hydrologic feature analysis
+- Spectral index calculation (NDVI, NBR)
+- Zonal statistics and raster sampling
+- Reproducible geoprocessing workflows
+- Interactive mapping and exploratory visualization
+
+### Tools
+
+- Python  
+- Google Earth Engine  
+- geemap  
+- Pandas  
+- Altair  
+- Google Colab / Jupyter  
+
+### Context
+
+This project represents an **analytical, scripting-focused complement** to the visualization and application-driven projects presented elsewhere in this repository. While other projects emphasize dashboard design and user interaction, this workflow highlights geoprocessing logic, spatial analysis, and environmental data interpretation using programmatic GIS methods.
+
