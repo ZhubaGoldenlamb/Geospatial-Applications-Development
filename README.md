@@ -161,7 +161,7 @@ Vector workflows focused on hydrologic structure and spatial relationships and i
 River segments within the Walla Walla Basin were classified by **stream order (`RIV_ORD`)** to distinguish dominant hydrologic channels from smaller tributaries. The map below highlights river segments filtered to **stream orders ≤ 6**, which were defined as *main rivers* for downstream geoprocessing.
 
 <p align="center">
-  <img src="screenshots/river_order.png"
+  <img src="screenshots/river_order_v2.png"
        alt="Main River Orders Used for Geoprocessing (RIV_ORD ≤ 6)"
        style="width: 100%; max-width: 1400px; height: auto;">
 </p>
@@ -195,7 +195,7 @@ Raster workflows were conducted using **Landsat 9 TOA imagery** and included:
 The maximum NDVI composite emphasizes areas of persistent vegetation vigor by retaining the highest NDVI value observed at each pixel across the image collection.
 
 <p align="center">
-  <img src="screenshots/ndvi_max_basin.png"
+  <img src="screenshots/ndvi_max_basin_v2.png"
        alt="NDVI Maximum Composite Clipped to the Walla Walla Basin"
        style="width: 100%; max-width: 1400px; height: auto;">
 </p>
@@ -207,7 +207,7 @@ Higher NDVI values are concentrated along riparian corridors and irrigated agric
 To support quantitative interpretation beyond map visualization, **1,000 random pixels** were sampled from the basin-clipped NDVI composite and analyzed using Pandas and Altair.
 
 <p align="center">
-  <img src="screenshots/ndvi_plots.png"
+  <img src="screenshots/ndvi_plots_v2.png"
        alt="NDVI Histogram and Red–NIR Scatterplot from Sampled Pixels"
        style="width: 100%; max-width: 1200px; height: auto;">
 </p>
