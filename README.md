@@ -134,7 +134,7 @@ Global hydrologic datasets and satellite imagery were combined to examine **rive
 This project highlights **programmatic geoprocessing logic** rather than interface-driven GIS tools, demonstrating how large geospatial datasets can be queried, transformed, and analyzed using Python.
 
 📄 The complete geoprocessing workflow is implemented in the Python script  
-[gee_geoprocessing_workflow_ZG.py](gee_geoprocessing_workflow_ZG.py), which documents the full vector and raster analysis using the Google Earth Engine Python API.
+[gee_geoprocessing_workflow_ZG.py](gee_geoprocessing_workflow_ZG_v2.py), which documents the full vector and raster analysis using the Google Earth Engine Python API.
 
 ### Vector Analysis & Spatial Operations
 
