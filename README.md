@@ -11,30 +11,13 @@ A consolidated portfolio of additional visualization-focused projects developed 
 
 ### 📊 Project 1: Interactive Restaurant Analysis Dashboard
 
-## 🚀 View the Live Interactive Power BI Dashboard👉 **[Open the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)**
-
 **Overview**  
 This project integrates Yelp restaurant review data with user-submitted Survey123 responses to support comparative spatial and qualitative analysis. The system consists of a Power BI dashboard, an ArcGIS Experience Builder web application, and a Survey123 form. Power BI serves as the primary analytical interface, while Experience Builder extends spatial exploration beyond the constraints of a dashboard layout.
 
-#### **Application Components**
+## 🚀 View the Live Interactive Power BI Dashboard👉 **[Open the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)**
 
 **Power BI Dashboard (Primary Analysis Interface)**  
 <img src="/screenshots/PowerBI_Dashboard.PNG" width="2000">
-
-**ArcGIS Experience Builder Web App (Extended Spatial Exploration)**  
-<img src="/screenshots/Online_Web_App.png" width="600">
-*Web GIS Application (Experience Builder):* [Open Web App](https://csulb.maps.arcgis.com/home/item.html?id=f1858b7291a74810b991c77a5711407f)
-
-**Survey123 Form (User Data Collection)**  
-<img src="/screenshots/Survey.PNG" width="400">
-*Survey123 Form:* [Submit / View Survey](https://csulb.maps.arcgis.com/home/item.html?id=e67d65f4376440c0b955b1871b9a5dfd)
-
-#### **Role of ArcGIS Experience Builder**
-The ArcGIS Experience Builder application provides deeper spatial interaction beyond the Power BI dashboard. Each restaurant point includes a structured pop-up that integrates both **user-submitted survey responses** and **aggregated Yelp review data**.
-
-Within the pop-up:
-- The **“Experience”** and **“Write a Review”** sections display Survey123 responses, allowing users to view qualitative feedback and contribute new survey entries.
-- Below the survey content, **Yelp review data** is presented, including aggregated ratings and review metrics derived from online sources.
 
 #### **Key Design Decisions**
 - The dashboard is intentionally divided into two vertical sections:
@@ -87,6 +70,22 @@ Rather than redesigning the dashboard or relying on elevated privileges, the fin
 - Preserving full interactivity, so selecting a restaurant point on the map highlights the same restaurant (e.g., *Sushi Hana*) across bar charts and other visuals.
 
 This approach maintains analytical clarity and interactivity while remaining compatible with governed enterprise environments. The resulting dashboard demonstrates not only spatial analysis and visualization skills, but also the ability to adapt designs pragmatically when working within platform and administrative constraints.
+
+#### **Role of ArcGIS Experience Builder and Survey123**
+The ArcGIS Experience Builder application provides deeper spatial interaction beyond the Power BI dashboard. Each restaurant point includes a structured pop-up that integrates both **user-submitted survey responses** and **aggregated Yelp review data**.
+
+**ArcGIS Experience Builder Web App (Extended Spatial Exploration)**  
+<img src="/screenshots/Online_Web_App.png" width="600">
+*Web GIS Application (Experience Builder):* [Open Web App](https://csulb.maps.arcgis.com/home/item.html?id=f1858b7291a74810b991c77a5711407f)
+
+Within the pop-up:
+- The **“Experience”** and **“Write a Review”** sections display Survey123 responses, allowing users to view qualitative feedback and contribute new survey entries.
+
+**Survey123 Form (User Data Collection)**  
+<img src="/screenshots/Survey.PNG" width="400">
+*Survey123 Form:* [Submit / View Survey](https://csulb.maps.arcgis.com/home/item.html?id=e67d65f4376440c0b955b1871b9a5dfd)
+
+- Below the survey content, **Yelp review data** is presented, including aggregated ratings and review metrics derived from online sources.
 
 #### **Tools**
 - Power BI Desktop  
