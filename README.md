@@ -242,4 +242,4 @@ The histogram illustrates the distribution of NDVI values across the basin, whil
 
 This project represents an **analytical, scripting-focused complement** to the visualization- and application-driven projects presented elsewhere in this repository. While other projects emphasize dashboards, web GIS, and cartographic design, this workflow highlights **geoprocessing logic, spatial analysis, and environmental interpretation** using programmatic GIS methods.
 
-🔗 **Extended ArcGIS Portfolio (Esri Hub)** View the full Esri Hub portfolio: 👉 https://csulb.hub.arcgis.com/pages/b82842670730436991cf08f8b023501a?preview=true
+🔗 **Extended ArcGIS Portfolio (Esri Hub)** View the full Esri Hub portfolio: https://csulb.hub.arcgis.com/pages/b82842670730436991cf08f8b023501a?preview=true
