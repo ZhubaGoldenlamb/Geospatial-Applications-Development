@@ -199,7 +199,12 @@ Raster workflows use **Landsat 9 TOA imagery** and include:
 #### NDVI Maximum Composite (Clipped to Basin)
 The maximum NDVI composite highlights spatial variation in vegetation density across the basin, emphasizing greener riparian corridors relative to surrounding uplands.
 
-![NDVI Max Composite](screenshots/ndvi_max_basin.png)
+<p align="center">
+  <img src="screenshots/ndvi_max_basin.png"
+       alt="NDVI Max Composite (Clipped to Walla Walla Basin)"
+       width="1000"
+       style="max-width: 100%; height: auto;">
+</p>
 
 ### Sampling & Exploratory Data Analysis
 
