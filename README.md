@@ -13,7 +13,7 @@ A consolidated portfolio of additional visualization-focused projects developed 
 **Power BI · ArcGIS Experience Builder · Survey123**
 
 🔗 **Live Applications**  
-- **Power BI Dashboard:** [View Interactive Dashboard](https://app.powerbi.com/groups/me/reports/dfd5324f-eff7-4a38-ac2f-d07c83833f84/9b943d3431319454036d?experience=power-bi)  
+- **Power BI Dashboard:** [View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDdkYjI3OTgtOWFlZS00N2EyLWI5NTYtYjE4ZWMxOTg1Y2RlIiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9)
 - *Web GIS Application (Experience Builder):* [Open Web App](https://csulb.maps.arcgis.com/home/item.html?id=f1858b7291a74810b991c77a5711407f)
 - *Survey123 Form:* [Submit / View Survey](https://csulb.maps.arcgis.com/home/item.html?id=e67d65f4376440c0b955b1871b9a5dfd)
 
@@ -73,7 +73,22 @@ SWITCH(
 - Bold axis labels and external bar values for readability  
 - Cleaned and validated Excel source data to ensure reliable pop-ups and hyperlinks  
 - Standardized field names across Power BI and ArcGIS Online for seamless integration  
-- Experience Builder widgets configured to maintain usability across different screen sizes  
+- Experience Builder widgets configured to maintain usability across different screen sizes
+
+#### **Platform Constraints & Problem-Solving Approach**
+Publishing this dashboard required navigating several non-obvious constraints related to Power BI map visuals, tenant-level governance, and publishing behavior. While multiple mapping solutions rendered correctly in Power BI Desktop, differences in how visuals behave once published to the Power BI Service necessitated a systematic troubleshooting process.
+
+During development, I evaluated Bing Maps (deprecated), ArcGIS Maps for Power BI, and Azure Maps, testing each across Desktop, in-app preview, and published environments. Certain configurations—particularly those involving advanced symbology or embed validation workflows—were restricted by tenant-level permissions that could not be modified without administrator intervention.
+
+To ensure reliable spatial rendering across environments, restaurant addresses were geocoded in ArcGIS Pro using the ArcGIS World Geocoding Service and converted to WGS 1984 latitude/longitude coordinates. This eliminated dependence on cloud-based address geocoding within Power BI and provided consistent, explicit spatial inputs for map visuals.
+
+Rather than redesigning the dashboard or relying on elevated privileges, the final solution was implemented by:
+- Using **Azure Maps with explicit latitude/longitude fields** to ensure stable rendering in the published Power BI Service.
+- Limiting the map visual to **location-only encoding**, avoiding configuration patterns that trigger restricted embed or validation workflows.
+- Encoding categorical meaning (Yelp rating classes) through **linked charts and shared color conventions**, ensuring that map selections still cross-highlight corresponding bars and summary metrics.
+- Preserving full interactivity, so selecting a restaurant point on the map highlights the same restaurant (e.g., *Sushi Hana*) across bar charts and other visuals.
+
+This approach maintains analytical clarity and interactivity while remaining compatible with governed enterprise environments. The resulting dashboard demonstrates not only spatial analysis and visualization skills, but also the ability to adapt designs pragmatically when working within platform and administrative constraints.
 
 #### **Tools**
 - Power BI Desktop  
