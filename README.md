@@ -3,7 +3,7 @@
 
 This section documents applied geospatial projects focused on **interactive analysis, data-driven decision support, and cartographic design**.
 
-🔗 **Extended ArcGIS Portfolio (Esri Hub)** 👉 View the full Esri Hub portfolio: https://csulb.hub.arcgis.com/pages/b82842670730436991cf08f8b023501a?preview=true
+🔗 **Extended ArcGIS Portfolio (Esri Hub)** View the full Esri Hub portfolio: https://csulb.hub.arcgis.com/pages/b82842670730436991cf08f8b023501a?preview=true
 
 ---
 
