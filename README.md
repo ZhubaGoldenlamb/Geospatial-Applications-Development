@@ -13,7 +13,7 @@ A consolidated portfolio of additional visualization-focused projects developed 
 **Power BI · ArcGIS Experience Builder · Survey123**
 
 🔗 **Live Applications**  
-- **Power BI Dashboard:** [View Interactive Dashboard](https://app.powerbi.com/groups/me/reports/dfd5324f-eff7-4a38-ac2f-d07c83833f84/9b943d3431319454036d?experience=power-bi)  
+- ***Power BI Dashboard:*** [View Interactive Dashboard](https://app.powerbi.com/groups/me/reports/dfd5324f-eff7-4a38-ac2f-d07c83833f84/9b943d3431319454036d?experience=power-bi)  
 - **Web GIS Application (Experience Builder):** [Open Web App](https://csulb.maps.arcgis.com/home/item.html?id=f1858b7291a74810b991c77a5711407f)
 - **Survey123 Form:** [Submit / View Survey](https://csulb.maps.arcgis.com/home/item.html?id=e67d65f4376440c0b955b1871b9a5dfd)
 
